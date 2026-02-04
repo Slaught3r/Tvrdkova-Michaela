@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michala Tvrdková – projektant a interiérový designer</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background: #fdfdfd; }
+    header, section, footer { max-width: 960px; margin: auto; padding: 2rem 1rem; }
+    header { background: #e9ecef; text-align: center; }
+    h1 { margin: 0; font-size: 2rem; }
+    h2 { border-bottom: 1px solid #ccc; padding-bottom: .5rem; }
+    .services, .portfolio, .contact-info { margin-top: 2rem; }
+    .service, .project { margin-bottom: 1.5rem; }
+    .highlight-points li { margin-bottom: .5rem; }
+    form label { display: block; margin-top: 1rem; }
+    form input, form textarea { width: 100%; padding: .5rem; margin-top: .25rem; }
+    form button { margin-top: 1rem; padding: .5rem 1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Michala Tvrdková – projektant a interiérový designer</h1>
+    <p>Nabízím služby v oblasti návrhů dispozic bytů i domů, prostorové uspořádání interiéru, tvorba 3D vizualizací, tvorba profesionální CAD dokumentace</p>
+  </header>
+
+  <section>
+    <h2>O mně</h2>
+    <p>Jmenuji se Michaela Tvrdková a už více než deset let pomáhám lidem vytvářet domovy, ve kterých se cítí opravdu dobře. Vystudovala jsem ČVUT a od té doby se aktivně věnuji navrhování interiérů i dispozic bytů a domů. Jsem pečlivá, empatická a vždy hledám řešení, které je nejen estetické, ale hlavně funkční a přizpůsobené životu konkrétní rodiny.</p>
+    <p>K designu mě přivedla kombinace snění a technického myšlení. Vždycky mě fascinovalo, jak prostor dokáže ovlivnit náladu a chování lidí, a stejně tak mě bavila přesnost a logika technických řešení. Studium architektury mi pak dalo možnost obojí propojit.</p>
+    <p>A možná i to, že jsem máma dvou kluků, mě naučilo dívat se na domov jinýma očima – jako na místo, které má být nejen krásné, ale taky praktické, bezpečné a radostné.</p>
+    <ul class="highlight-points">
+      <li>Naslouchám a ptám se – nejde mi o rychlý návrh, ale o pochopení vašich potřeb.</li>
+      <li>Kombinuji estetiku, technickou odbornost a rozumný rozpočet.</li>
+      <li>Jsem detailista – věřím, že detaily určují, jak se vám bude doma žít.</li>
+      <li>Klienty doprovázím i během realizace.</li>
+      <li>Navrhuji, jako bych navrhovala pro sebe.</li>
+    </ul>
+  </section>
+
+  <section class="services">
+    <h2>Služby</h2>
+
+    <div class="service">
+      <h3>Architekt / projektant</h3>
+      <p>Navrhnu optimální dispozice bytu nebo domu – ať už plánujete novostavbu, přestavbu nebo rekonstrukci.</p>
+      <ul>
+        <li>půdorysy, řezy, 3D vizualizace</li>
+        <li>kompletní projektová dokumentace ke stavebnímu povolení i realizaci</li>
+        <li>profesionální CAD software: AutoCAD, ArchiCAD, Revit</li>
+      </ul>
+    </div>
+
+    <div class="service">
+      <h3>Interiérový designér</h3>
+      <p>Navrhuji prostorové uspořádání interiéru tak, aby ladil s vaším životním stylem i každodenními potřebami.</p>
+      <ul>
+        <li>dispozice, materiály, barvy</li>
+        <li>3D vizualizace interiéru</li>
+        <li>SketchUp, 3ds Max, Revit</li>
+      </ul>
+    </div>
+
+    <div class="service">
+      <h3>CAD projektant / kreslič</h3>
+      <p>Překreslím vaše zadání do profesionální technické dokumentace – vhodné např. pro řemeslníky či úřady.</p>
+      <ul>
+        <li>výkresy z podkladů</li>
+        <li>technické výstupy v CAD formátu</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <h2>Portfolio</h2>
+    <p>Zde najdete ukázky realizovaných projektů:</p>
+    <div class="project">Projekt 1 – náhled vizualizace (bude doplněno)</div>
+    <div class="project">Projekt 2 – náhled vizualizace (bude doplněno)</div>
+    <div class="project">Projekt 3 – náhled vizualizace (bude doplněno)</div>
+    <div class="project">Projekt 4 – náhled vizualizace (bude doplněno)</div>
+    <div class="project">Projekt 5 – náhled vizualizace (bude doplněno)</div>
+  </section>
+
+  <section class="contact-info">
+    <h2>Kontakt</h2>
+    <p>Email: <a href="mailto:tvrdkova.mi@gmail.com">tvrdkova.mi@gmail.com</a></p>
+    <p>Telefon: <a href="tel:+420774222357">+420 774 222 357</a></p>
+
+    <h3>Napište mi:</h3>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label for="name">Vaše jméno:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Váš e-mail:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Zpráva:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Odeslat</button>
+    </form>
+  </section>
+
+  <footer>
+    <p style="text-align:center; font-size: 0.9rem; color: #888;">&copy; 2026 Michaela Tvrdková</p>
+  </footer>
+</body>
+</html>
