@@ -4,27 +4,99 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Michala Tvrdková – projektant a interiérový designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body { font-family: sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background: #fdfdfd; }
-    header, section, footer { max-width: 960px; margin: auto; padding: 2rem 1rem; }
-    header { background: #e9ecef; text-align: center; }
+    :root {
+      --main-color: #444;
+      --accent-color: #005f73;
+      --bg-color: #fdfdfd;
+      --section-bg: #f4f4f4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: var(--main-color);
+      background: var(--bg-color);
+      scroll-behavior: smooth;
+    }
+    header, section, footer {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    header {
+      background: var(--section-bg);
+      text-align: center;
+      padding-top: 6rem;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 1rem;
+      gap: 2rem;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: var(--accent-color);
+      font-weight: 600;
+    }
     h1 { margin: 0; font-size: 2rem; }
-    h2 { border-bottom: 1px solid #ccc; padding-bottom: .5rem; }
+    h2 { border-bottom: 2px solid var(--accent-color); padding-bottom: .5rem; margin-top: 4rem; }
     .services, .portfolio, .contact-info { margin-top: 2rem; }
     .service, .project { margin-bottom: 1.5rem; }
     .highlight-points li { margin-bottom: .5rem; }
     form label { display: block; margin-top: 1rem; }
-    form input, form textarea { width: 100%; padding: .5rem; margin-top: .25rem; }
-    form button { margin-top: 1rem; padding: .5rem 1rem; }
+    form input, form textarea {
+      width: 100%; padding: .5rem; margin-top: .25rem; border: 1px solid #ccc; border-radius: 4px;
+    }
+    form button {
+      margin-top: 1rem; padding: .5rem 1rem;
+      background: var(--accent-color);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #003f52;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      padding-bottom: 2rem;
+    }
   </style>
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><a href="#o-mne">O mně</a></li>
+      <li><a href="#sluzby">Služby</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+  </nav>
+
   <header>
     <h1>Michala Tvrdková – projektant a interiérový designer</h1>
     <p>Nabízím služby v oblasti návrhů dispozic bytů i domů, prostorové uspořádání interiéru, tvorba 3D vizualizací, tvorba profesionální CAD dokumentace</p>
   </header>
 
-  <section>
+  <section id="o-mne">
     <h2>O mně</h2>
     <p>Jmenuji se Michaela Tvrdková a už více než deset let pomáhám lidem vytvářet domovy, ve kterých se cítí opravdu dobře. Vystudovala jsem ČVUT a od té doby se aktivně věnuji navrhování interiérů i dispozic bytů a domů. Jsem pečlivá, empatická a vždy hledám řešení, které je nejen estetické, ale hlavně funkční a přizpůsobené životu konkrétní rodiny.</p>
     <p>K designu mě přivedla kombinace snění a technického myšlení. Vždycky mě fascinovalo, jak prostor dokáže ovlivnit náladu a chování lidí, a stejně tak mě bavila přesnost a logika technických řešení. Studium architektury mi pak dalo možnost obojí propojit.</p>
@@ -38,9 +110,8 @@
     </ul>
   </section>
 
-  <section class="services">
+  <section id="sluzby" class="services">
     <h2>Služby</h2>
-
     <div class="service">
       <h3>Architekt / projektant</h3>
       <p>Navrhnu optimální dispozice bytu nebo domu – ať už plánujete novostavbu, přestavbu nebo rekonstrukci.</p>
@@ -50,7 +121,6 @@
         <li>profesionální CAD software: AutoCAD, ArchiCAD, Revit</li>
       </ul>
     </div>
-
     <div class="service">
       <h3>Interiérový designér</h3>
       <p>Navrhuji prostorové uspořádání interiéru tak, aby ladil s vaším životním stylem i každodenními potřebami.</p>
@@ -60,7 +130,6 @@
         <li>SketchUp, 3ds Max, Revit</li>
       </ul>
     </div>
-
     <div class="service">
       <h3>CAD projektant / kreslič</h3>
       <p>Překreslím vaše zadání do profesionální technické dokumentace – vhodné např. pro řemeslníky či úřady.</p>
@@ -71,7 +140,7 @@
     </div>
   </section>
 
-  <section class="portfolio">
+  <section id="portfolio" class="portfolio">
     <h2>Portfolio</h2>
     <p>Zde najdete ukázky realizovaných projektů:</p>
     <div class="project">Projekt 1 – náhled vizualizace (bude doplněno)</div>
@@ -81,7 +150,7 @@
     <div class="project">Projekt 5 – náhled vizualizace (bude doplněno)</div>
   </section>
 
-  <section class="contact-info">
+  <section id="kontakt" class="contact-info">
     <h2>Kontakt</h2>
     <p>Email: <a href="mailto:tvrdkova.mi@gmail.com">tvrdkova.mi@gmail.com</a></p>
     <p>Telefon: <a href="tel:+420774222357">+420 774 222 357</a></p>
@@ -102,7 +171,7 @@
   </section>
 
   <footer>
-    <p style="text-align:center; font-size: 0.9rem; color: #888;">&copy; 2026 Michaela Tvrdková</p>
+    <p>&copy; 2026 Michaela Tvrdková</p>
   </footer>
 </body>
 </html>
